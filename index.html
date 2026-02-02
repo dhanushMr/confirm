@@ -39,13 +39,21 @@
       display: none;
       font-weight: bold;
     }
-    
-    #thankYou-aprita{
-      margin-top: 30px;
+
+    #thankYou-aprita {
+      margin-top: 20px;
       font-size: 42px;
       color: yellow;
       display: none;
       font-weight: bold;
+    }
+
+    /* 🔹 IMAGE STYLE */
+    #yesImage {
+      margin-top: 30px;
+      max-width: 300px;
+      display: none;
+      border-radius: 12px;
     }
   </style>
 </head>
@@ -60,6 +68,9 @@
 
   <div id="thankYou">Thank you!! ❤️</div>
   <div id="thankYou-aprita">Arpita!! 🐷</div>
+
+  <!-- 🔹 IMAGE (hidden initially) -->
+  <img id="yesImage" src="image01.jpeg" alt="Our moment">
 
   <script>
     function moveNo() {
@@ -81,6 +92,7 @@
       document.getElementById("noBtn").style.display = "none";
       document.getElementById("thankYou").style.display = "block";
       document.getElementById("thankYou-aprita").style.display = "block";
+      document.getElementById("yesImage").style.display = "block";
     }
   </script>
 
